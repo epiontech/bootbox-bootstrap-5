@@ -343,7 +343,7 @@
     if (options.closeButton) {
       let clsbtn = $(templates.closeButton);      
       if (options.fullBootstrapVersion < '5.0.0') {
-        clsbtn.html('&times;');
+        clsbtn.html('<i class="fas fa-times"></i>');
       }
 
       /* Note: the close button for Bootstrap 5+ does not contain content */
