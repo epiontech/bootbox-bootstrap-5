@@ -12,7 +12,7 @@
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {
     // Node, CommonJS-like
-    module.exports = factory(require('jquery'));
+    module.exports = factory(window.$);
   } else {
     // Browser globals (root is window)
     root.bootbox = factory(root.jQuery);
